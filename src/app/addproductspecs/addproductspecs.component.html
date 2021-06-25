@@ -1,6 +1,6 @@
 <section class="col-4 bg-primary card card-primary mx-auto p-1 m-1" id="addspecs">
   <h2>Add Product Specifications</h2>
-  <div class="alert alert-success" *ngIf="msg!=undefined" [ngStyle]="{'background-color':this.msgflag?'green':'red'}">{{msg}}</div>
+  <div class="alert alert-success text-white" *ngIf="msg!=undefined" [ngStyle]="{'background-color':this.msgflag?'green':'red'}">{{msg}}</div>
   <form #specform="ngForm" (ngSubmit)="addspecs()">
     
     <div>Specification Name</div>
